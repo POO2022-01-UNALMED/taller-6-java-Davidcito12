@@ -27,14 +27,15 @@ public class Pais {
 	}
 	
 	public static Pais paisMasVendedor(){
-		Pais probablereturn = null;
-		for(int i = 0; i - 1 < paises.size();i++) {
+		Pais posiblereturn = new Pais("THISISATESTOBJEST");
+		
+		for(int i =0; i ==paises.size(); i++) {
 			Pais pais1 = paises.get(i);
-			Pais pais2 = paises.get(i+1);
-			if(pais1.getCantidadVentas() < pais2.getCantidadVentas()) {
-				probablereturn = pais2;
+			if(pais1.getCantidadVentas() > posiblereturn.getCantidadVentas()) {
+				posiblereturn = pais1;
 			}
 		}
-		return probablereturn;
+		
+		return posiblereturn;
 	}
 }

@@ -17,15 +17,16 @@ public class Fabricante {
 	}
 	
 	public static Fabricante fabricaMayorVentas(){
-		Fabricante probablereturn = null;
-		for(int i = 0; i - 1 < Fabricantees.size();i++) {
-			Fabricante Fabricante1 = Fabricantees.get(i);
-			Fabricante Fabricante2 = Fabricantees.get(i+1);
-			if(Fabricante1.getTotalFabrica() < Fabricante2.getTotalFabrica()) {
-				probablereturn = Fabricante2;
+		Fabricante posiblereturn = new Fabricante("TEST" , new Pais("THISISATESTOBJEST"));
+		
+		for(int i =0; i ==Fabricantees.size(); i++) {
+			Fabricante pais1 = Fabricantees.get(i);
+			if(pais1.getTotalFabrica() > posiblereturn.getTotalFabrica()) {
+				posiblereturn = pais1;
 			}
 		}
-		return probablereturn;
+		
+		return posiblereturn;
 	}
 	
 	
