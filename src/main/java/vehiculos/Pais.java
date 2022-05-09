@@ -29,7 +29,7 @@ public class Pais {
 	public static Pais paisMasVendedor(){
 		Pais posiblereturn = new Pais("THISISATESTOBJEST");
 		
-		for(int i =0; i ==paises.size(); i++) {
+		for(int i =0; i < paises.size(); i++) {
 			Pais pais1 = paises.get(i);
 			if(pais1.getCantidadVentas() > posiblereturn.getCantidadVentas()) {
 				posiblereturn = pais1;

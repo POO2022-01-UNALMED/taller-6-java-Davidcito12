@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Fabricante {
 	private static ArrayList<Fabricante> Fabricantees = new ArrayList<Fabricante>();
-	private int totalFabrica = 0;
+	public int totalFabrica = 0;
 	private String nombre;
 	private Pais pais;
 	
@@ -18,10 +18,10 @@ public class Fabricante {
 	
 	public static Fabricante fabricaMayorVentas(){
 		Fabricante posiblereturn = new Fabricante("TEST" , new Pais("THISISATESTOBJEST"));
-		
-		for(int i =0; i ==Fabricantees.size(); i++) {
+		for(int i =0; i < Fabricantees.size(); i++) {
 			Fabricante pais1 = Fabricantees.get(i);
-			if(pais1.getTotalFabrica() > posiblereturn.getTotalFabrica()) {
+			
+			if(pais1.totalFabrica >= posiblereturn.totalFabrica) {
 				posiblereturn = pais1;
 			}
 		}
