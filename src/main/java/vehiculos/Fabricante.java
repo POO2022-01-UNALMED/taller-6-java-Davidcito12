@@ -16,7 +16,7 @@ public class Fabricante {
 		Fabricantees.add(this);
 	}
 	
-	public static Fabricante FabricaMayorVentas(){
+	public static Fabricante fabricaMayorVentas(){
 		Fabricante probablereturn = null;
 		for(int i = 0; i - 1 < Fabricantees.size();i++) {
 			Fabricante Fabricante1 = Fabricantees.get(i);
