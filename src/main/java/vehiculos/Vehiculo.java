@@ -13,7 +13,7 @@ public class Vehiculo {
 	private static int cantidadCamioneta = 0;
 	private static int cantidadCamion = 0;
 	private static int cantidadAutomovil = 0;
-	private static int cantidadTotalvehiculos = cantidadAutomovil + cantidadCamion + cantidadCamioneta;
+	private static int cantidadVehiculos = cantidadAutomovil + cantidadCamion + cantidadCamioneta;
 	
 
 
@@ -133,6 +133,14 @@ public class Vehiculo {
 
 	public static void setCantidadTotalvehiculos(int cantidadTotalvehiculos) {
 		Vehiculo.cantidadTotalvehiculos = cantidadTotalvehiculos;
+	}
+
+	public static int getCantidadVehiculos() {
+		return cantidadVehiculos;
+	}
+
+	public static void setCantidadVehiculos(int cantidadVehiculos) {
+		Vehiculo.cantidadVehiculos = cantidadVehiculos;
 	}
 
 	
