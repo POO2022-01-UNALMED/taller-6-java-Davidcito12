@@ -10,10 +10,7 @@ public class Vehiculo {
 	private String traccion;
 	private Fabricante fabricante;
 	
-	private static int cantidadCamioneta = 0;
-	private static int cantidadCamion = 0;
-	private static int cantidadAutomovil = 0;
-	private static int cantidadVehiculos = cantidadAutomovil + cantidadCamion + cantidadCamioneta;
+	private static int cantidadVehiculos = 0;
 	
 
 
@@ -30,12 +27,13 @@ public class Vehiculo {
 		this.fabricante = fabricante;
 		fabricante.setTotalFabrica(fabricante.getTotalFabrica() + 1);
 		fabricante.getPais().setCantidadVentas(fabricante.getPais().getCantidadVentas() + 1);
+		cantidadVehiculos++;
 	}
 	
 	public String vehiculosPorTipo() {
-		return "Automoviles: " + cantidadAutomovil + "\n"
-			 + "Camionetas: " + cantidadCamioneta + "#\n"
-			 + "Camiones: " + cantidadCamion;
+		return "Automoviles: " + Automovil.totalAutomoviles + "\n"
+			 + "Camionetas: " + Camioneta.totalCamionetas + "#\n"
+			 + "Camiones: " + Camion.totalCamiones;
 	}
 	
 	
@@ -87,40 +85,6 @@ public class Vehiculo {
 	}
 	public void setFabricante(Fabricante fabricante) {
 		this.fabricante = fabricante;
-	}
-	
-	public static int getCantidadCamioneta() {
-		return cantidadCamioneta;
-	}
-
-
-
-	public static void setCantidadCamioneta(int cantidadCamioneta) {
-		Vehiculo.cantidadCamioneta = cantidadCamioneta;
-	}
-
-
-
-	public static int getCantidadCamion() {
-		return cantidadCamion;
-	}
-
-
-
-	public static void setCantidadCamion(int cantidadCamion) {
-		Vehiculo.cantidadCamion = cantidadCamion;
-	}
-
-
-
-	public static int getCantidadAutomovil() {
-		return cantidadAutomovil;
-	}
-
-
-
-	public static void setCantidadAutomovil(int cantidadAutomovil) {
-		Vehiculo.cantidadAutomovil = cantidadAutomovil;
 	}
 
 
