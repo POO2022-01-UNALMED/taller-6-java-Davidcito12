@@ -124,17 +124,6 @@ public class Vehiculo {
 	}
 
 
-
-	public static int getCantidadTotalvehiculos() {
-		return cantidadTotalvehiculos;
-	}
-
-
-
-	public static void setCantidadTotalvehiculos(int cantidadTotalvehiculos) {
-		Vehiculo.cantidadTotalvehiculos = cantidadTotalvehiculos;
-	}
-
 	public static int getCantidadVehiculos() {
 		return cantidadVehiculos;
 	}
