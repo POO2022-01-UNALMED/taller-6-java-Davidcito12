@@ -14,7 +14,7 @@ public class Vehiculo {
 	
 
 
-	public Vehiculo(String nombre,int puertas, int velocidadMaxima, String placa, int precio, int peso,
+	public Vehiculo(String placa,int puertas, int velocidadMaxima, String nombre, int precio, int peso,
 			String traccion, Fabricante fabricante) {
 		super();
 		this.puertas = puertas;
